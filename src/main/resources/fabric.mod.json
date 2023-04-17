@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "mccourse",
+  "version": "${version}",
+
+  "name": "Musa's Minecraft Mod",
+  "description": "Musa Schaechtel's firs Minecraft Mod to learn how to code in JAVA!",
+  "authors": [
+    "Musa Schaechtelel (Minecraft Username = MusaMaster or MusaMaster23)"
+  ],
+  "contact": {
+    "homepage": "https://musamaster.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/mccourse/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.musamaster.mccourse.MCCourseMod"
+    ]
+  },
+  "mixins": [
+    "mccourse.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
